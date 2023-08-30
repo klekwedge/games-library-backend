@@ -5,11 +5,16 @@ import * as Controller from './controllers/GamesController.js'
 const app = express();
 
 app.use(express.json());
-app.use(cors()); 
+app.use(cors());
 
 app.get(
     "/games",
     Controller.getGames
+);
+
+app.get(
+    "/game",
+    Controller.getGame
 );
 
 app.listen(process.env.PORT || 4444, (err) => {
