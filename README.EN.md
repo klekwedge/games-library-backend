@@ -35,11 +35,11 @@ The API provides access to the following functionality:
 
 - `genre` (optional) - Allows you to get games by genre.
 - `platform` (optional) - Allows you to get games by platform.
-- `sort` (optional) - Allows you to sort the games.
+- `sort-by` (optional) - Allows you to sort the games.
 
 #### Request example
 
-GET /games?genre=shooter&platform=pc&sort=alphabetical
+GET /games?genre=shooter&platform=pc&sort-by=alphabetical
 
 #### Answer
 
