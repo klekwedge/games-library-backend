@@ -8,7 +8,7 @@ export const getGames = async (req, res) => {
         let basicUrl = `https://free-to-play-games-database.p.rapidapi.com/api/games?rapidapi-key=${API_KEY}`;
         basicUrl += req.query.genre ? `&category=${req.query.genre}` : ''
         basicUrl += req.query.platform ? `&platform=${req.query.platform}` : ''
-        basicUrl += req.query.sort ? `&sort-by=${req.query.sort}` : ''
+        basicUrl += req.query['sort-by'] ? `&sort-by=${req.query['sort-by']}` : ''
 
         const response = await axios.get(basicUrl);
 
